@@ -1,0 +1,9 @@
+.center {
+	&-horizontal {
+		margin: 0 auto 8px auto;
+		text-align: center;
+	}
+	&-vertical {
+		margin: auto 0;
+	}
+}

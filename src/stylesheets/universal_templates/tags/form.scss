@@ -1,0 +1,37 @@
+.form {
+    &_centered {
+        width: fit-content;
+        &_vertical {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        &_horizontal {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &_submit {
+        $margin: 2rem;
+        @extend .display_flex;
+        @extend .form_centered;
+
+        width: 50%;
+        margin-top: $margin * 3;
+        margin-bottom: $margin * 2;
+        text-align: center;
+        flex-flow: row nowrap;
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+        @media (max-width: 568px) {
+            width: 100%;
+            padding: 0 8px;
+        }
+        &_text {
+            line-height: 2;
+            margin: auto;
+            width: fit-content;
+        }
+    }
+}

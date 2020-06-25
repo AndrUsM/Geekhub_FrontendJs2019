@@ -1,0 +1,94 @@
+@mixin button-hover-pink {
+	&:hover {
+		color: #ff5480;
+		cursor: pointer;
+	}
+}
+@mixin button-hover {
+	&:hover {
+		color: black;
+		cursor: pointer;
+	}
+}
+@mixin button_social {
+	@include button_general;
+	@include button_hover-pink;
+	border-radius: 50%;
+	margin: 8px;
+	background: transparent;
+}
+@mixin button_general {
+	outline: none;
+	border: none;
+}
+@mixin logo_general {
+	font-family: "Pitcher Regular";
+	font-size: 32px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.button {
+	&_sumbit {
+		@include button_general;
+		@include button-hover;
+		border-radius: 40px;
+		background-color: #ff5480;
+		color: white;
+		width: 50%;
+		font-weight: bolder;
+		padding: 12px 0;
+		margin-left: -25px;
+		vertical-align: top;
+	}
+	&_element {
+		font-size: $font-size-base;
+		&_color {
+			&-gray {
+				color: $text-gray;
+			}
+			&-black {
+				color: #000000;
+			}
+		}
+		text-decoration: none;
+		&_hover {
+			@include button-hover-pink;
+			cursor: pointer;
+		}
+	}
+	&_close {
+		@include button-hover-pink;
+		position: absolute;
+		color: white;
+		top: 0;
+		margin: 0.5rem;
+		right: 0;
+		font-size: $font-size-subheader;
+	}
+
+	&_logo {
+		&-gray {
+			color: $text-gray;
+			@include logo_general;
+		}
+		&-main {
+			color: $bg-white;
+			@include logo_general;
+		}
+		&-black {
+			color: #000000;
+			@include logo_general;
+		}
+	}
+	&_social {
+		&-gray {
+			color: #9b9b9b;
+			@include button_social;
+		}
+		&-white {
+			color: #ffffff;
+			@include button_social;
+		}
+		@include button-hover-pink;
+	}
+}

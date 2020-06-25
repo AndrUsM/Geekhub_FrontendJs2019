@@ -1,0 +1,29 @@
+@mixin button_general {
+    outline: none;
+    border: none;
+    text-transform: none;
+    text-decoration: none;
+}
+@mixin button_color_effect($standart, $effect) {
+    color: $standart;
+    &:hover,
+    &:focus {
+        color: $effect;
+    }
+}
+.link {
+    &_section {
+        $default_text_color: #555555;
+        @include button_general;
+        @include button_color_effect($default_text_color, #333333);
+        font-size: 14px;
+        &_dash {
+            letter-spacing: .5px;
+            word-spacing: 1px;
+            &::after {
+                @extend .text_symbol-dash;
+                color: $default_text_color !important;
+            }
+        }
+    }
+}

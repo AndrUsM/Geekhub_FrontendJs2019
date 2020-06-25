@@ -1,0 +1,35 @@
+.loader {
+	font-size: $font-size-header;
+	// color: #fff;
+
+	&_centered {
+		background: transparent;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+    }
+    &_block {
+        position: absolute;
+        height: $font-size-large;
+    }
+	&_icon {
+		display: block;
+		font-size: 3rem
+	}
+	&_animated {
+		animation-name: spin;
+		animation-iteration-count: infinite;
+		animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		animation-duration: 3s;
+	}
+}
+
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

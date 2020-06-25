@@ -1,0 +1,229 @@
+@mixin card_general {
+	letter-spacing: 0.16px;
+	line-height: 1.5;
+	text-align: left;
+	&:first-child {
+		margin: auto 0 0 0;
+	}
+	&:last-child {
+		margin: 0;
+	}
+	margin: auto 0;
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+}
+@mixin card_main {
+	$margin: 12px;
+
+	padding: 32px;
+	margin: $margin $margin 0 0;
+	border-radius: 8px;
+	&:nth-child(even) {
+		margin: $margin 0 0 0;
+	}
+	&:first-child {
+		margin: $margin 0 0 0;
+	}
+	&:last-child {
+		margin: $margin 0 0 $margin;
+	}
+	@media (max-width: 768px) {
+		margin: 0 auto !important;
+	}
+}
+
+@mixin box-shadow {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+	&-horizontal {
+		margin: 0 auto 8px auto;
+		text-align: center;
+	}
+	&-vertical {
+		margin: auto 0;
+	}
+}
+
+.card {
+	&_header {
+		// reading list in popular page
+		margin: auto 1rem !important;
+		&-carousel {
+			margin: 0;
+			padding: 15rem 1rem;
+			border-radius: 0;
+			@media (max-width: 920px) {
+				padding: 10rem 0.75rem;
+			}
+			@media (max-width: 448px) {
+				padding: 3rem 0.75rem;
+			}
+		}
+	}
+
+	&_reading_lists {
+		padding: 1rem;
+		display: grid;
+		width: fit-content;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+
+		@media (max-width: 1200px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 920px) {
+			grid-template-columns: 1fr;
+		}
+
+		&__image {
+			margin: auto;
+			@media (min-width: 1500px) {
+				width: 50% !important;
+			}
+		}
+	}
+
+	&_popular {
+		&__article {
+			background: #ffffff;
+		}
+		// grid block wrapper
+		&__wrapper {
+			margin: 1rem 0;
+		}
+
+		$margin: 12px;
+
+		padding: 32px;
+		margin: $margin $margin 0 0;
+		border-radius: 8px;
+		&:nth-child(even) {
+			margin: 0;
+		}
+		&:first-child {
+			margin: 0;
+		}
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	@include card_main;
+	&_bg {
+		&-blue {
+			background: $bg-blue;
+		}
+	}
+	&_shadow {
+		@include box-shadow;
+	}
+	&__header {
+		text-transform: uppercase;
+		font-size: $font-size-header;
+		font-weight: bold;
+		@include card_general;
+	}
+	&__author {
+		text-transform: uppercase;
+		font-size: $font-size-subheader;
+		@include card_general;
+
+		@media screen and (max-width: 448px) {
+			font-size: 16px;
+		}
+	}
+	&__body {
+		font-size: $font-size-base;
+		@include card_general;
+	}
+	&__wrapper {
+		@include card_main;
+		@include card_general;
+		display: block;
+	}
+	&__image {
+		$border-radius: 8px;
+
+		position: relative;
+		display: block;
+		border-radius: $border-radius;
+		background: transparent;
+		width: fit-content;
+		&_tag {
+			@include box-shadow;
+			background: transparent;
+			width: 100%;
+			border-radius: $border-radius;
+			-webkit-box-shadow: 0 0 18px 8px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0 0 18px 8px rgba(0, 0, 0, 0.75);
+			box-shadow: 0 0 18px 8px rgba(0, 0, 0, 0.75);
+		}
+	}
+	&__title {
+		font-size: $font-size-large;
+		font-weight: bold;
+		@include card_general;
+
+		@media screen and (max-width: 768px) {
+			font-size: 32px;
+		}
+		@media screen and (max-width: 448px) {
+			font-size: 24px;
+		}
+	}
+	&__grid-wrapper {
+		display: grid;
+		&_one {
+			grid-template-columns: repeat(1, 1fr);
+			&_responsive {
+				grid-template-columns: repeat(1, 1fr);
+				@media (min-width: 1200px) {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+		}
+		&_two {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: auto;
+			&_ratio {
+				&_60-40 {
+					grid-template-columns: 0.6fr 0.4fr;
+					grid-template-rows: auto;
+					@media (max-width: 1200px) {
+						grid-template-columns: 1fr;
+					}
+				}
+			}
+			@media (max-width: 768px) {
+				grid-template-columns: 1fr;
+			}
+		}
+		&_four {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: auto;
+			@media (max-width: 1200px) {
+				grid-template-columns: repeat(1, 1fr);
+				grid-template-rows: auto;
+			}
+			@media (max-width: 768px) {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	&__flex-wrapper {
+		display: flex;
+		&_row {
+			justify-content: space-between;
+			flex-flow: row wrap;
+		}
+		&_column {
+			flex-flow: column wrap;
+			&-around {
+				justify-content: space-around;
+			}
+		}
+	}
+}

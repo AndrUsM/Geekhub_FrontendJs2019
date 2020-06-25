@@ -1,0 +1,30 @@
+/* Fonts */
+@import "./typography";
+
+/* Variables */
+@import "./variables.scss";
+@import "./reset.scss";
+
+/* Universal templates */
+/* components */
+@import "./universal_templates/components/block.scss";
+@import "./universal_templates/components/preloader.scss";
+@import "./universal_templates/components/carousel.scss";
+@import "./universal_templates/components/card.scss";
+@import "./universal_templates/components/link.scss";
+@import "./universal_templates/general/icon.scss";
+/* tags */
+@import "./universal_templates/tags/list.scss";
+@import "./universal_templates/tags/input.scss";
+@import "./universal_templates/tags/button.scss";
+@import "./universal_templates/tags/form.scss";
+/* general */
+@import "./universal_templates/general/text.scss";
+@import "./universal_templates/general/general.scss";
+/* properties */
+@import "./universal_templates/properties/center.scss";
+@import "./universal_templates/properties/display.scss";
+@import "./universal_templates/properties/margin.scss";
+
+/* Media */
+

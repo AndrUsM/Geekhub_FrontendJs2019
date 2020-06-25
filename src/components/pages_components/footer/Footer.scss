@@ -1,0 +1,21 @@
+.footer {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 45px 0;
+    @media (max-width: 568px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.footer-copyright {
+
+    &__text {
+        color: #9b9b9b;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: italic;
+    }
+}

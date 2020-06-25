@@ -1,0 +1,46 @@
+@mixin icon_image_general {
+    background-repeat: no-repeat !important;
+}
+.icon {
+    &_topics{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start !important;
+        margin: 1rem .25rem;
+
+        width: 100%;
+        font-size: $font_size-subheader;
+    }
+    &_general{
+        @include icon_image_general;
+        width: 40px;
+        height: 35px;
+        margin: 0 5px;
+    }
+    &-bell {
+        &-point {
+            background: url("/icons/topics/bell_point.png");
+        }
+    }
+    &-console {
+        background: url("/icons/topics/console.png");
+    }
+    &-lamp {
+        background: url("/icons/topics/lamp.png");
+    }
+    &-location{
+        background: url("/icons/topics/location.png");
+    }
+    &-scissors{
+        background: url("/icons/topics/scissors.png");
+    }
+    &-shield{
+        background: url("/icons/topics/shield.png");
+    }
+    &-speaker{
+        background: url("/icons/topics/speaker.png");
+    }
+    &-rocket{
+        background: url("/icons/topics/rocket.png");
+    }
+}

@@ -1,0 +1,91 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    z-index: 100;
+    height: 100%;
+    padding: 0;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    &__wrapper {
+        padding: 1rem;
+        height: 100%;
+        backdrop-filter: blur(1rem);
+        background: rgba(0, 0, 0, 0.8);
+        animation-name: menuWrapper;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+
+    }
+
+    &_status {
+
+        
+        &-open {
+            animation-name: menuAnimatedOpen;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        &-close {
+            animation-name: menuAnimatedClose;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in;
+            display: none;
+        }
+    }
+}
+
+
+
+@keyframes menuAnimatedOpen {
+
+0% {
+    left: -500px;
+}
+
+50% {
+
+}
+
+100%{
+    left: 0;
+}
+
+}
+
+@keyframes menuAnimatedClose {
+    0% {
+        left: 0;
+
+    }
+    
+    50% {
+    
+    }
+    
+    100%{
+        left: -500px;
+    }
+}
+
+
+@keyframes menuWrapper {
+    0% {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    50% {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}

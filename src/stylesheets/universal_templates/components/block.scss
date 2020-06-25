@@ -1,0 +1,86 @@
+.block {
+	&__element {
+		$margin: 160px;
+		&_indent {
+			&:first-child {
+				padding: $margin 0 0 0;
+			}
+			&:last-child {
+				padding: 0 0 0 0;
+			}
+			// default
+			padding: $margin 0;
+			&-dual {
+				padding: $margin 0;
+			}
+			&-bottom {
+				padding: 0 0 $margin 0;
+			}
+			&-top {
+				padding: $margin 0 0 0;
+			}
+		}
+	}
+	&_topics {
+		display: grid;
+		grid-template-rows: auto;
+		margin: auto;
+
+		@media (min-width:1200px) {	
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@media (max-width:1200px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 920px) {
+			grid-template-rows: auto;
+			grid-template-columns: 1fr;
+			width: fit-content;
+		}
+
+		&__description{
+			padding: 1rem .5rem;
+			font-size: $font_size-subheader;
+			line-height: 2;
+			text-align: left;
+			margin: auto;
+		}
+	}
+	&__empty {
+		background: rgba(0, 0, 0, 0.1);
+	}
+	&__wrapper {
+		width: 100%;
+		margin: auto;
+	}
+	&_reading_lists{
+		display: grid;
+		grid-auto-rows: auto;
+		@media (min-width: 1500px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 1200px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 920px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__header_wrapper {
+		padding: 0 $header-body-indent;
+		background: $bg-blue;
+
+		@media screen and (max-width: 768px) {
+			padding: 0;
+			background: transparent;
+		}
+	}
+	&__body {
+		padding: 0 $header-body-indent;
+		background: $bg-gray;
+
+		@media screen and (max-width: 768px) {
+			padding: 0 2%;
+		}
+	}
+}

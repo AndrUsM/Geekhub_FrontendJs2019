@@ -1,0 +1,1 @@
+export const class_center: string = "center-horizontal";

@@ -1,0 +1,33 @@
+@mixin input_general(){
+    // border: none;
+    outline: none;
+}
+@mixin input_hover($background) {
+    &:hover, &:focus{
+        background: $background;
+        border-color: #999;
+    }
+}
+
+.input{
+    $border-radius: 16px;
+    &_submit{
+        // opacity: -1;
+        -webkit-transition: all 1s ease-out 0.5s;
+        -moz-transition: all 1s ease-out 0.5s;
+        -o-transition: all 1s ease-out 0.5s;
+        transition: all 1s ease-out 0.5s;
+        @include input_hover(#ddd);
+        @include input_general;
+        color: #111210;
+        font-family: "Open Sans";
+        font-size: $font-size-base;
+        letter-spacing: -0.1px;
+        border: 1px solid #dddddd;
+        height: inherit;
+        padding: 14px;
+        width: 100%;
+        border-radius: $border-radius 0 0 $border-radius;
+        text-align: center;
+    }
+}
