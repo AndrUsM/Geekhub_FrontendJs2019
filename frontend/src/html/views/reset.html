@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login page</title>
+    <link rel="stylesheet" href="../../../dist/css/style.bundle.css">
+</head>
+<body>
+    <main>
+        <section class="message">
+            <p class="message__text"></p>
+        </section>
+        <section class="form">
+            <article class="form__image">
+                <!-- TODO -->
+            </article>
+            <article class="input-group">
+                <div class="group-header">
+                    <h1 class="group-header__h2eader">Reset password</h1>
+                    <a class="input-group__link">Please enter your new password</a>
+                </div>
+            </article>
+            <article class="input-group ">
+                <div class="input-group__input">
+                    <input type="email" name="email" id="email">
+                    <input type="password" name="password" id="password">
+                    <input type="password" name="confirm_password" id="confirm_password">
+                </div>
+                <div class="input-group__message">
+                    <p class="input-group__message-text"></p>
+                </div>
+                <button class="input-group__button">Sign up</button>
+            </article>
+        </section>
+    </main>
+    <div id="alert"></div>
+    <script src="../src/js/reset.js"></script>
+</body>
+</html>
