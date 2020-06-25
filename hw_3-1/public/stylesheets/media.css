@@ -1,0 +1,94 @@
+@media screen and (max-width: 991px){
+    /* Flex settings */
+    .d-flex article, .d-flex div, .d-flex .section{
+        width: 50% !important;
+        padding: .5rem;
+    }
+    /* Header */
+    header .header-nav-menu-banner{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 768px){
+    .d-flex article, .d-flex div, .d-flex .section{
+        width: 97.5% !important;
+    }
+    /* Footer */
+    footer #copyright p{
+        width: 90%;
+        margin: 0 auto;
+    }
+    footer #footer-links ul{
+        width: 97.5%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    /* Main */
+    #test-text-of-section article:empty{
+        display: none;
+    }
+}
+@media (max-width: 400px){
+    /* General */
+    img{
+        width: auto;
+        max-width: 100%;
+    }
+    .d-flex article, .d-flex div, .d-flex .section{
+        width: 100% !important;
+        margin: 1rem .25rem;
+    }
+    *{
+        font-size: 1rem;
+    }
+    /* Header */
+    header .nav-brand{
+        text-align: center;
+    }
+    header .menu-icon{
+        display: block;
+    }
+    header .header-nav-menu-banner{
+        width: 100%;
+    }
+    /* Menu icon logic */
+    header .menu-icon:checked nav{
+        display: block !important;
+    }
+    header nav{
+        display: none;
+        width: 100%;
+    }
+    header nav li{
+        display: block !important;
+        padding: 1rem 0;
+        margin: 0 auto !important;
+    }
+    header nav li:hover{
+        background: rgba(0,0,0, .6);
+        color: #fff;
+        border-radius: .5rem;
+        text-align: center;
+    }
+    header .header-nav-menu-banner{
+        width: 97.5% !important;
+    }
+    /* Main */
+    #test-text-of-section article{
+        text-align: center;
+    }
+    /* Newsletter */
+    #newsletter button{
+        display: block;
+        margin: 1rem auto 0 auto !important;
+    }
+    #newsletter input{
+        border-radius: 1rem !important;
+    }
+    #newsletter input, #newsletter button{
+        width: 90%;
+        padding: .5rem 0 !important;
+    }
+}

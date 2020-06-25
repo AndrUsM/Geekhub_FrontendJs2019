@@ -1,0 +1,39 @@
+footer #footer-links{
+    padding: 2rem 0;
+}
+footer #footer-links ul li{
+    display: block;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+}
+footer #copyright{
+    background: url("../../images/footer_form_bg.png") no-repeat;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    /* padding: 5% 0; */
+}
+footer #copyright article{
+    width: auto;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+/* Text style for "symu.co" */
+footer #copyright .symu.co{
+    font-family: "Proxima Nova Rg";
+    font-weight: 700;
+    color: #fff;
+}
+/* Text style for "Cum sociis" */
+footer #copyright .footer-main-text{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Proxima Nova Lt";
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;    
+}
+
+

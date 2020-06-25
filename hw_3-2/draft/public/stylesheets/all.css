@@ -1,0 +1,6 @@
+@import "./carousel.css";
+@import "./media.css";
+/* Content */
+@import "./content/header.css";
+@import "./content/main.css";
+@import "./content/footer.css";

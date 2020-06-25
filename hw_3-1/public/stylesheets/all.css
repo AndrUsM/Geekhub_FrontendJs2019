@@ -1,0 +1,8 @@
+@import './media.css';
+@import './normalize.css';
+@import './general.css';
+@import './animation.css';
+/* Page content */
+@import './content/header.css';
+@import './content/main.css';
+@import './content/footer.css';

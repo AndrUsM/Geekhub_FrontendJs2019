@@ -1,0 +1,65 @@
+header .header-nav-menu-banner{
+    color: #ECEEF1;
+    width: 90%;
+    margin: 0 auto;
+    padding: .5rem 0;
+}
+header .nav-menu-article{
+    margin: auto 0;
+}
+header .header-nav-menu-banner article{
+    width: 40%;
+}
+header nav{
+    width: 100%;
+}
+header nav *{
+    color: #31353e;
+    word-break: break-word;
+}
+header nav li{
+    display: inline;
+}
+header nav li:not(:last-child){
+    margin: 0 1rem 0 0;
+}
+header .header-nav-menu-banner .nav-brand{
+    margin: auto 0;
+    color: #31353e;
+    font-family: "Roboto Slab";
+}
+header .main-header-section{
+    background-image: url("../../images/header_bg.png");
+    background-size: cover;
+}
+/* Wrapper for dark gradient background */
+header .main-header-section .wrapper{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+}
+/* Block of dishes */
+header .header-block{
+    width: 30%;
+    margin: 1rem auto;
+}
+header .header-block img{
+    display: block;
+    margin: 1rem auto;
+}
+header button.read-more{
+    background: #fff;
+    color: #612316;
+    display: block;
+    margin: 1rem auto;
+    padding: .5rem 1rem;
+    border-radius: 27px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.header-description{
+    font-family: "Roboto Slab - Light";
+    font-weight: 300;
+}
+
+
+button:checked + nav:hover li{
+    display: inline ;
+}
