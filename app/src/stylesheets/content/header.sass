@@ -1,0 +1,87 @@
+.nav-panel
+    transition: 1s ease-out 0.5s
+    margin: auto
+    &__list
+        display: flex
+        flex-flow: row wrap
+    &__list-item
+        display: inline
+        word-break: normal
+        font-size: 1.15rem
+        font-weight: 600
+        text-transform: uppercase
+        vertical-align: top
+        color: #263742
+    &__link
+        color: #263742
+    &__link_color--red
+        color: #fa5c65
+    &__burger
+        cursor: pointer
+        display: none
+        font-size: 1rem
+    &__logo
+        background-color: #fa5c65
+        font-family: Domine
+        margin: auto
+        color: #ffffff
+        width: auto
+        font-weight: 700
+        padding: 2rem .5rem .25rem .5rem
+        font-size: 1.25rem
+        border-radius: 0 0 .5rem .5rem
+        *
+            color: #ffffff
+            word-break: normal
+        // Margins between list elements
+    &__list-item:not(:last-child)
+        margin: auto 1rem auto 1rem
+    &__list-item:last-child
+        margin: auto 0 auto 0
+.page-header
+    background: url('../../src/images/Header.png')
+    background-size: cover
+    padding: 0 10%
+    background-repeat: no-repeat
+    &__wrapper
+        margin: auto
+    // Freelancer button
+    .page-header_nav_section-freelancer
+        background-color: #fa5c65
+        font-family: Domine
+        width: auto
+        font-weight: 700
+        padding: 2rem .5rem .25rem .5rem
+        font-size: 1.25rem
+        border-radius: 0 0 .5rem .5rem
+        *
+            color: #ffffff
+            word-break: normal
+    .page-header_main
+        .page-header_main__centered-section
+            padding: 10rem 0
+    &__title
+        color: #314a5b
+        font-family: Montserrat
+        font-size: 2.5rem
+        font-weight: 700
+        line-height: 1.5
+        text-transform: uppercase
+    &__description
+        color: #314a5b
+        font-family: "Open Sans"
+        font-size: 1.75rem
+        font-weight: 400
+        padding: .5rem 0
+        line-height: 1.4
+    &__more_button
+        color: #ffffff
+        font-family: "Open Sans"
+        font-size: 1rem
+        font-weight: 700
+        line-height: 1.5
+        text-transform: uppercase
+        margin: 1.5rem 0 0 0
+        padding: 1rem 2rem
+        border-radius: .5rem
+        background-color: #fa5c65

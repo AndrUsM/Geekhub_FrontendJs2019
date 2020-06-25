@@ -1,0 +1,50 @@
+.main-content
+    .card
+        width: 30%
+        line-height: 2
+        margin: 1rem auto
+        font-family: "Open Sans", sans-serif
+        margin: auto
+        display: flex
+        flex-direction: column
+        // *
+        //     line-height: 1.5
+        &__block_wrapper
+            width: 100%
+            padding: .5% .25%
+        &__subtitle
+            font-size: 1rem
+            font-weight: 700
+            text-transform: uppercase
+        &__subtitle--red
+            color: #f0454c
+            font-family: "Open Sans"
+            font-size: 1rem
+            font-weight: 400
+        .title
+            color: #465065
+            font-weight: 700
+            text-transform: uppercase
+        &__title_size-lg
+            @extend  .title
+            font-size: 1.5rem
+        &__title_size-s
+            @extend .title
+            font-size: 1.25rem
+        &__description
+            color: #9aa0ab
+            font-size: 1rem
+            font-weight: 400
+        &__img-avatar
+            width: auto
+            margin: auto
+    &__section
+        margin: 2rem auto
+.more-button
+    color: #fa5c65
+    font-size: 1.25rem
+    font-weight: 400
+    line-height: 1.1rem
+    background: transparent
+    padding: .5rem 0
+    text-transform: uppercase
