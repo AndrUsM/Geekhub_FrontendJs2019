@@ -1,0 +1,18 @@
+@media (max-width: 991px){
+    .d-flex div, .d-flex article{
+        width: 50% !important;
+    }
+}
+@media (max-width: 769px){
+    .d-flex div, .d-flex article{
+        width: 97.5% !important;
+    }
+    footer section{
+        text-align: center;
+        margin: 1rem auto;
+    }
+    main, footer, header .top-header-banner{
+        width: 100%;
+        margin: 0 auto;
+    }
+}

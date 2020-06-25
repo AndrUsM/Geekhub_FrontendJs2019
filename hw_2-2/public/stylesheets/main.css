@@ -1,0 +1,201 @@
+@import "./normalize.css";
+@import "./media.css";
+/* General */
+ul{
+    padding-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-block-start: 0;
+}
+main, footer, header .top-header-banner{
+    width: 80%;
+    margin: 0 auto;
+}
+section{
+    margin: 3rem auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-light-gray{
+    color: #9aa0ab;
+}
+.red-dot{
+    color: #f0454c;
+    font-size: 2rem;
+}
+.icon{
+    color: #263742;
+}
+/* Header icons */
+.header-red-icon{
+    color: #fa5c65;
+}
+
+hr.gray{
+    background: #b9c0c6;
+    width: 100%;
+    margin: .5rem auto;
+    padding: .1rem 0;
+    border-radius: 1.5rem;
+}
+/* Header */
+header{
+    background: url("/public/images/Header.png");
+    background-size: cover;
+    object-fit: cover;
+}
+header nav{
+    display: inline-flex;
+}
+header .top-header-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+
+}
+header nav ul li{
+    list-style-type: none;
+    display: inline;
+    color: #263742;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 85px;
+    text-transform: uppercase;
+}
+header section div p{
+    color: #314a5b;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 53px;
+    text-transform: uppercase;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    background: #fa5c65;
+    font-family: Domine;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 2rem .3rem .3rem 0.3rem;
+    border-radius: 0 0 .5rem .5rem;
+}
+header article.main{
+    width: 80% auto;
+    display: block;
+}
+header .header-centeral-text{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+header .header-centeral-text .description{
+    color: #314a5b;
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+}
+/* Buttons */
+button.red-header-button{
+    border-radius: .5rem;
+    background: #fa5c65;
+    font-size: 1.5rem;
+    padding: .5rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+button{
+    outline: none;
+    border: 0;
+}
+button:hover{
+    background: #fff;
+    color: #fa5c65;
+}
+main .more-button{
+    color: #fa5c65;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 20px;
+    background: transparent;
+    text-transform: uppercase;
+}
+/* Macbook section */
+.macbook_portfolio_section article{
+    width: auto !important;
+    text-align: left;
+}
+/* Team block */
+.team-block div .header{
+color: #465065;
+font-family: Montserrat;
+font-weight: 700;
+line-height: 26px;
+}
+.team-block .specialty{
+    color: #f0454c;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 20px;
+}
+.team-block .description{
+    color: #9aa0ab;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* Flex settings */
+.d-flex{
+    display: flex;
+}
+.d-flex div,.d-flex article{
+    width: 33%;
+    margin: .5rem auto;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.justify-content-start{
+    justify-content: start;
+}
+.flex-wrap{
+    flex-flow: row wrap;
+}
+.flex-nowrap{
+    flex-flow: row nowrap;
+}
+/* Image wrap */
+.wrap-image{
+    float: left;
+    margin: .5rem .5rem .5rem 0;
+}
+/* Text settings */
+h1,h2{
+    text-transform: uppercase;
+    color: #263742;
+}
+p{
+    font-size: 1.3rem;
+    font-family: Montserrat;
+}
+/* Footer */
+footer{
+    padding: 1.5rem 1rem;
+    display: flex;
+    color: #b9c0c6;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .social-links img:first-child, footer .social-links img:not(:last-child){
+    margin: 0 1.5rem 0 0;
+}
+footer .social-links img:last-child{
+    margin: 0;
+}

@@ -1,0 +1,27 @@
+@media (max-width: 991px){
+    .d-flex div, .d-flex article{
+        width: 50% !important;
+    }
+    .input-group article{
+        width: auto !important;
+    }
+}
+@media (max-width: 769px){
+    .d-flex div, .d-flex article{
+        width: 97.5% !important;
+    }
+    .input-group article{
+        width: auto !important;
+    }
+    footer section{
+        text-align: center;
+        margin: 1rem auto;
+    }
+}
+@media (max-width: 350px){
+    .input-group article{
+        width: auto !important;
+        margin: 0 auto;
+        display: block;
+    }
+}

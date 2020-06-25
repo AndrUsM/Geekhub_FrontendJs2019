@@ -1,0 +1,13 @@
+@media (max-width: 991px){
+    .d-flex div{
+        width: 50% !important;
+    }
+}
+@media (max-width: 769px){
+    .d-flex div{
+        width: 97.5% !important;
+    }
+    .clients .d-flex{
+        flex-flow: row wrap;
+    }
+}

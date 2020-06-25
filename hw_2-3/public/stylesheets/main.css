@@ -1,0 +1,228 @@
+@import "./normalize.css";
+@import "./media.css";
+/* General */
+*{
+    letter-spacing: .3px;
+    line-height: 1.25;
+}
+h1{
+    padding-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-block-start: 0;
+}
+.p-0{
+    padding: 0 !important;
+}
+h1,h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    font-family: Lato;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-white{
+    color: #fff;
+}
+.text-center{
+    text-align: center;
+}
+/* Header*/
+header .top-banner{
+    background: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: flex;
+    padding: .5rem 0 .5rem 10%;
+}
+header .top-header{
+    background: url("/public/image/Image.png");
+    background-size: cover;
+    text-align: center;
+}
+header .top-header article p{
+    margin: 0 auto;
+}
+header hr.blue{
+    background: #3092FE;
+    border: 0;
+    width: 97.5%;
+    border-radius: 2rem;
+    margin: inherit 1.25%;
+    padding: .1rem 0;
+}
+header .top-header h1{ /* "Strict bold text" */
+    padding: 10rem 0 0 0;
+}
+header button.blue-border-button{
+    color: #fff;
+    border: .1rem solid #3092FE;
+    padding: 1rem .5rem;
+    border-radius: .25rem;
+    background: transparent;
+    margin: .5rem 0;
+    font-size: 1rem;
+}
+header .top-header .arrow-icon{
+    display: block;
+    margin: 5rem auto 0 auto;
+    padding: 0 0 1rem 0;
+}
+/* Main */
+main{
+    color: #2d3950;
+}
+main h1{
+    padding: 2rem 0 0 0;
+}
+main p{
+    padding: .5rem;
+}
+/* Main about */
+main section.about{
+    padding: 1rem 0;
+}
+/* Main section blocks bg */
+main section:nth-child(odd){
+    background: #f6f9f9;
+}
+/* Showcase */
+main .showcase{
+    margin: 0 auto;
+}
+main .showcase img{
+    width: 100%;
+}
+main .showcase .img-container{
+    position: relative;
+    text-align: center;
+}
+main .showcase div.centered-icons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*
+    border around image was inverted from black to white;
+    image was inverted from white to black;
+ */
+main .showcase div.centered-icons img{
+    border: .3rem solid #000;
+    border-radius: 1rem;
+    padding: .3rem;
+    width: 80px;
+    filter: invert(1);
+}
+main .showcase .blue-filter{
+    filter:sepia(90%) contrast(60%) saturate(1000%) hue-rotate(165deg);
+}
+main .showcase div.centered-icons img:first-child{
+    margin: 0 2rem 0 0;
+}
+main .showcase div{
+    width: 30%;
+    height: auto;
+    border-radius: .5rem;
+    margin: 0 1% 1% 1%;
+    background-size: contain;
+}
+main section.contact-form{
+    background: url("/public/image/banner-down.png");
+    background-size: contain;
+}
+main section.contact-form form{
+    width: 80%;
+    margin: 0 auto;
+}
+main .contact-form input[type="text"], main .contact-form input[type="email"], main .contact-form textarea{
+    border: 1px solid #999999;
+    background-color: rgba(0,0,0, 0);
+    border-radius: 2px;
+    font-size: 1.15rem;
+    margin: 1rem auto;
+    display: block;
+    padding: .5rem 0;
+    width: 100%;
+    outline: 0;
+    color: #999;
+}
+main .contact-form .input-group article{
+    width: auto !important;
+}
+main .contact-form .input-group{
+    width: auto;
+    padding: 0 0 1rem 0;
+}
+main .contact-form input[type=checkbox]{
+    margin: .25rem .5rem 0 0;
+}
+main .contact-form label{
+    vertical-align: top;
+}
+main .contact-form textarea{
+    resize: none;
+}
+main .contact-form button.blue-border-button{
+    color: #fff;
+    border: .1rem solid #3092FE;
+    padding: 0.5rem 2rem;
+    border-radius: .25rem;
+    background: transparent;
+    font-size: 1rem;
+    vertical-align: bottom;
+}
+/* Footer */
+footer{
+    background: #f6f9f9;
+    color: #999;
+    font-size: 15px;
+    font-family: Lato;
+}
+footer section{
+    padding: .3rem 0 0 0;
+    margin: auto;
+}
+/* Flex settings */
+.d-flex{
+    display: flex;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.flex-wrap{
+    flex-flow: row wrap;
+}
+.flex-nowrap{
+    flex-flow: row nowrap;
+}
+.d-flex div, .d-flex article{
+    width: 33%;
+    padding: 1rem 0;
+}
+/* Display settings */
+.d-inline-block{
+    display: inline-block;
+}
+/* Placeholder */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    padding: .5rem 1rem;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    padding: .5rem 1rem;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    padding: .5rem 1rem;
+}
+:-moz-placeholder { /* Firefox 18- */
+    padding: .5rem 1rem;
+}
