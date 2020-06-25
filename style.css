@@ -1,0 +1,36 @@
+*{
+    letter-spacing: .3px;
+    line-height: 1.5;
+}
+.h3{
+    font-size:  1.17em;
+    font-weight: bolder;
+}
+p, i, strong{
+    font-size: 1.15rem;
+}
+.text-wrap{
+    float: left;
+    margin: 0 .5rem .5rem 0 !important;
+}
+img{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 1rem auto !important;
+}
+.text-center{
+    text-align: center;
+}
+.text-decoration-underline{
+    text-decoration: underline;
+}
+ol li, ul li{
+    margin: .5rem 0;
+    font-size: 1.15rem;
+}
+@media (max-width: 991px){
+    img, div.block-center{
+        width: 100%;
+    }
+}
