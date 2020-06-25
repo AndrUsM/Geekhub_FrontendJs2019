@@ -1,0 +1,13 @@
+@media (max-width: 850px){
+    .calculator{
+        width: 80%;
+    }
+}
+@media (max-width: 600px){
+    .calculator--wrapper{
+        padding: 1%;
+    }
+    .calculator{
+        width: 100%;
+    }
+}
