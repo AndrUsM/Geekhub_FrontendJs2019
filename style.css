@@ -1,0 +1,24 @@
+body{
+    padding: 0 2rem;
+}
+.input-group{
+    margin: 1rem 0;
+}
+form{
+    margin: 1.5rem 0 0 0;
+}
+section:first-child{
+    margin: 0;
+}
+section:not(:first-child){
+    margin: 1rem 0;
+}
+section:last-child{
+    margin: 0 0 1rem 0;
+}
+form input#email, form input#final_field{
+    width: 45%;
+}
+form button[type="submit"]{
+    margin: 1rem 0;
+}
